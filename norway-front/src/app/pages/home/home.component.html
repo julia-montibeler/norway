@@ -1,0 +1,16 @@
+<div class="fullscreen-background">
+    <div id="background-image" class="background-image">
+        <div class="overlay">
+            <span class="mb-3 font-semibold text-5xl text-green-300">Norway</span>
+            <div class="mb-3 font-medium text-4xl">
+                <span class="text-900">One Country, </span>
+                <span class="text-purple-200">Many Places to Visit</span>
+            </div>
+            <div class="text-white-100 mb-6">Meet our tourist attractions!</div>
+        </div>
+    </div>
+</div>
+
+<div class="grid">
+    <app-place-card *ngFor="let place of places | slice:0:3" [place]="place" class="col-12 md:col-4 mb-4 px-5"></app-place-card>
+</div>

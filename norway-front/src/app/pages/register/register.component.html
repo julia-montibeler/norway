@@ -1,0 +1,19 @@
+<div style="margin-top: 50%;">
+	<form [formGroup]="registerForm">
+		<p-card header="Register">
+			<div class="field">
+				<label for="email">User</label>
+				<input formControlName="login" name="email" type="text" pInputText class="w-full" placeholder="Type your username"/>
+			</div>
+			<div class="field">
+				<label for="role">Role</label>
+				<input formControlName="role" name="role" type="text" pInputText class="w-full" placeholder="Type your role"/>
+			</div>
+			<div class="field">
+				<label for="password">Password</label>
+				<input formControlName="password" name="password" type="password" pInputText class="w-full" placeholder="Type your password"/>
+			</div>
+			<p-button (click)="onSubmit()" label="Register" styleClass="w-full"/>
+		</p-card>
+	</form>
+</div>

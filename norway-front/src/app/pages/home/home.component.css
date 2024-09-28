@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+.fullscreen-background {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+}
+
+.background-image {
+    background-image: url('https://www.segueviagem.com.br/wp-content/uploads/2019/11/noruega_aurora_boreal_credito_shutterstock_618504167-2-1024x683.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 98vw;
+    height: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.grid {
+    padding: 20px;
+}

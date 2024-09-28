@@ -1,0 +1,10 @@
+<p-card header="{{place.name}}" subheader="{{place.city}}">
+    <ng-template pTemplate="header">
+        <img alt="Card" src="{{place.image}}" />
+    </ng-template>
+    <ng-template pTemplate="footer">
+        <div class="text-right">
+            <p-button icon="pi pi-trash" [rounded]="true" (click)="onDelete(place.Id)"/>
+        </div>
+    </ng-template>
+</p-card>

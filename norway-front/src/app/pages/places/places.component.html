@@ -1,0 +1,19 @@
+<div class="text-right pt-8 pr-8">
+    <a href="registerplace">
+        <p-button icon="pi pi-plus" [rounded]="true"/>
+    </a>
+</div>
+
+<div class="surface-section px-4 py-8 md:px-6 lg:px-8 text-center">
+    <span class="mb-3 font-semibold text-5xl text-green-300">Norway</span>
+    <div class="mb-3 font-medium text-4xl">
+        <span class="text-900">One Country, </span>
+        <span class="text-purple-200">Many Places to Visit</span>
+    </div>
+    <div class="text-700 mb-6">Meet our tourist attractions!</div>
+    <hr class="my-3 mx-0 border-top-1 border-none surface-border" />
+    <div class="grid">
+        <app-place-card *ngFor="let place of places" [place]="place" class="col-12 md:col-4 mb-4 px-5"></app-place-card>
+    </div>
+</div>
+

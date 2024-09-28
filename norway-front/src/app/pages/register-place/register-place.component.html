@@ -1,0 +1,17 @@
+<form [formGroup]="registerForm">
+	<p-card header="Register">
+		<div class="field">
+			<label for="name">Name</label>
+			<input formControlName="name" name="name" type="text" pInputText class="w-full" placeholder="Name"/>
+		</div>
+        <div class="field">
+			<label for="city">City</label>
+			<input formControlName="city" name="city" type="text" pInputText class="w-full" placeholder="City"/>
+		</div>
+		<div class="field">
+			<label for="image">Image</label>
+			<input formControlName="image" name="image" type="text" pInputText class="w-full" placeholder="Paste the URL of the image"/>
+		</div>
+		<p-button (click)="onSubmit()" label="Register" styleClass="w-full"/>
+	</p-card>
+</form>
